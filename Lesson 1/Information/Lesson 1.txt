@@ -1,0 +1,76 @@
+JS - Язык взаимодействия с пользователем
+
+Если мы хотим записать число, то объявляем его через let 
+Если же мы хотим просто создать переменную, то пишем var 
+Если же мы хотим создать переменную константы то пишем const 
+
+let number = 5;
+
+console.log("Hello World!");
+
+alert("Вход воспрещён!")
+
+let answer = confirm("Еесть ли вам 18 лет ?");
+
+let answer = prompt("Есть ли вам 18 лет ?")
+
+console.log(answer);
+
+Массивы
+
+
+let answers = [];
+
+answers[0] = prompt("Как ваше имя ?", "");
+answers[1] = prompt("Как ваша фамилия ?", "");
+answers[2] = prompt("Сколько вам лет ?", "");
+
+document.write(answers)
+
+let answers = [],
+	questions = [
+	"Как ваше имя ?",
+	"Как ваша фамилия ?",
+	"Сколько вам лет ?"
+	];
+
+for(let i = 0; i < questions.length; i++) {
+	answers[i] = prompt(questions[i])
+}
+
+document.write(answers);
+
+Циклы 
+
+
+for (let i = 0; i < 10; i++) {
+	console.log(i)
+}
+
+let age = prompt('Сколько вам лет?');
+
+if (age > 18) {
+	alert("Вы можете войти!")
+} else {
+	alert("Рановато ещё!")
+}
+
+Функция
+
+function humanSayHello(obj) {
+	document.write("Hello " + obj + "!")
+}
+
+humanSayHello("Ivan");
+humanSayHello("Anna");
+humanSayHello("Roma");
+
+function calc(a,b) {
+	console.log(a + b)
+};
+
+calc(4,5);
+calc(5,5);
+calc(10,5);
+
+ДЗ
